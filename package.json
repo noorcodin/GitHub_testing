@@ -1,0 +1,25 @@
+{
+  "name": "diplomski",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "Automated tests for GitHub web interface using Selenium, WebDriver, TypeScript, and Jest",
+  "devDependencies": {
+    "@types/jest": "^29.5.12",
+    "@types/node": "^20.14.2",
+    "@types/selenium-webdriver": "^4.1.23",
+    "jest": "^29.7.0",
+    "jest-environment-node": "^29.7.0",
+    "selenium-webdriver": "^4.0.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.4.5"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.5"
+  }
+}

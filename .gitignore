@@ -1,0 +1,47 @@
+# Node.js
+node_modules/
+npm-debug.log
+yarn-error.log
+
+# TypeScript
+*.tsbuildinfo
+
+# Environment variables
+.env
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Jest
+coverage/
+jest-report/
+
+# Selenium
+selenium-debug.log
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# IDE-specific files
+.vscode/
+.idea/
+*.swp
+
+# Output directories
+dist/
+build/
+out/
+
+# Generated files
+*.cache
+*.tmp
+*.bak
+*.backup
+
+# GitHub Actions workflows (optional, if you have local actions definitions you don't want to push)
+# .github/workflows/
