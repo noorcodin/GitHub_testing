@@ -7,19 +7,19 @@ dotenv.config();
 let driver: WebDriver;
 
 beforeAll(async () => {
-    const options = new Options();
-    options.addArguments('--headless');
-    options.addArguments('--no-sandbox');
-    options.addArguments('--disable-dev-shm-usage');
+  const options = new Options();
+  options.addArguments('--headless');
+  options.addArguments('--no-sandbox');
+  options.addArguments('--disable-dev-shm-usage');
 
-    driver = await new Builder()
-        .forBrowser('chrome')
-        .setChromeOptions(options)
-        .build();
+  driver = await new Builder()
+    .forBrowser('chrome')
+    .setChromeOptions(options)
+    .build();
 });
 
 afterAll(async () => {
-    await driver.quit();
+  await driver.quit();
 });
 
 export { driver, By, until };

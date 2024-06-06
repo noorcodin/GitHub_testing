@@ -3,7 +3,7 @@ name: GitHub Web Interface Tests
 on:
   push:
     branches:
-      - master
+      - main
 
 jobs:
   test:
@@ -19,8 +19,7 @@ jobs:
         node-version: '14'
 
     - name: Install dependencies
-      run: |
-        npm install
+      run: npm install
 
     - name: Run tests
       env:
@@ -28,4 +27,4 @@ jobs:
         PASSWORD: ${{ secrets.PASSWORD }}
       run: |
         Xvfb :99 & export DISPLAY=:99
-        npm test
+        npx dotenv -e .env npm test
