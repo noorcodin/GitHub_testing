@@ -27,4 +27,4 @@ jobs:
         PASSWORD: ${{ secrets.PASSWORD }}
       run: |
         Xvfb :99 & export DISPLAY=:99
-        npx dotenv -e .env npm test
+        npm test
